@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# GitHub Metrics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek web app built with **React**, **TypeScript**, and **Shadcn UI**, designed to display a GitHub user's profile, repositories, and commit activity using the **GitHub GraphQL API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Fetches and displays GitHub user info
+- Lists public repositories with details
+- Visualizes commit activity using GraphQL API
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Follow these steps to run the project locally:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/prakhar5100/github-metrics.git
+   cd github-metrics
+   ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. **Install dependencies**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit the app**  
+   Open your browser and go to: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌐 Deployment
+
+To deploy the app:
+
+- Push your code to GitHub.
+- Use [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) for seamless deployment by linking the repository.
+
+---
+
+Feel free to contribute or raise issues if you find any bugs or have suggestions!
