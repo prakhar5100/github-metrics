@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const GITHUB_API_URL = "https://api.github.com/graphql";
-const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN
 
 
 export async function fetchGitHubProfile(username:string) {
